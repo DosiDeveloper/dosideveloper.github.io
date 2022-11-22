@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+.navbar-button {
+  height: 13px;
+  width: 100%;
+}
+
+.navbar-button::before {
+  content: "";
+  margin: auto;
+  height: 5px;
+  width: 50%;
+  display: block;
+  justify-content: center;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.bg-center-center {
+  background-position: center center;
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--bg-red-600);
+}
