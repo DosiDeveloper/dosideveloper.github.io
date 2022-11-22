@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className="flex flex-wrap w-screen items-center justify-center bg-slate-800 text-white rounded-b-lg fixed mt-[-10px]"
+      className="flex flex-wrap w-full items-center justify-center bg-slate-800 text-white rounded-b-lg fixed mt-[-10px]"
       variants={variants}
       transition={{
         duration: 0.4,

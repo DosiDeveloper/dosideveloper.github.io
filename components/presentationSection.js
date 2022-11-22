@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 export default function PresentationSection() {
   return (
     <motion.header
-      className="grid gap-5 place-items-center content-center h-screen my-6"
+      className="grid gap-5 place-items-center content-center h-screen my-6 lg:mt-32 lg:mb-8"
       id="presentation"
     >
       <motion.div
-        className="flex flex-col place-items-center justify-center content-center text-white p-6 bg-slate-800 rounded-2xl shadow-md"
+        className="flex flex-col place-items-center justify-center content-center text-white p-10 bg-slate-800 rounded-2xl shadow-md"
         style={{
           borderRadius: "76% 31% 29% 35% / 66% 71% 48% 80% ",
         }}
         transition={{
           duration: 0.8,
         }}
-        initial={{ x: -200, opacity: 0 }}
+        initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
@@ -28,7 +28,7 @@ export default function PresentationSection() {
         </h2>
       </motion.div>
       <motion.div
-        className="w-full h-full bg-slate-600 grid content-center place-items-center shadow-lg p-1"
+        className="lg:mx-4 bg-slate-600 grid content-center place-items-center shadow-lg p-1"
         style={{
           borderRadius: "76% 31% 29% 35% / 66% 71% 48% 80% ",
         }}
@@ -42,7 +42,7 @@ export default function PresentationSection() {
         <Image
           alt="my_photo"
           src={myImage}
-          className="rounded-full w-1/2 shadow-sm"
+          className="w-[30%] shadow-sm"
           style={{
             borderRadius: "56% 44% 70% 30% / 40% 73% 27% 60% ",
           }}

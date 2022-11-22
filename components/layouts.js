@@ -22,7 +22,7 @@ export default function Layouts({ children }) {
         onExitComplete={() => window.scrollTo(0, 0)}
       >
         <motion.main
-          className="grid min-h-screen place-items-center content-center text-white bg-slate-700 bg-center-center bg-[url('/home_background.svg')] bg-no-repeat bg-cover pt-[70px] mt-[10px]"
+          className="grid min-h-screen place-items-center justify-center content-center text-white bg-slate-700 bg-center-center bg-[url('/home_background.svg')] bg-no-repeat bg-cover pt-[70px] mt-[10px] overflow-auto"
           variants={variants}
           initial="hidden"
           animate="enter" 
