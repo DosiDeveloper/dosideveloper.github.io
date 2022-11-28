@@ -53,6 +53,7 @@ export default function ProjectSection({ project }) {
                           href={url}
                           className="text-center m-2 p-1 bg-red-600 rounded-lg hover:bg-red-500"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <span>Go to the project</span>
                         </a>
