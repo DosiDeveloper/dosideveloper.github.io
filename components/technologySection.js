@@ -72,7 +72,7 @@ export default function TechnnologySection() {
                   viewport={{ once: true }}
                   variants={variants}
                   initial={index % 2 === 0 ? "onShowLeft" : "onShowRight"}
-                  whileInView= {{ opacity: 1, x: 0}}
+                  whileInView={{ opacity: 1, x: 0 }}
                 >
                   <h1 className="font-bold text-md md:text-3xl m-2">{title}</h1>
                   <Image
